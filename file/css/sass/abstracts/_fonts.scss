@@ -1,0 +1,193 @@
+@font-face {
+     font-family: 'ArialMT';
+     src: url('/file/css/fontsArialMT.eot');
+     src: local('/file/css/fontsArialMT'), local('/file/css/fontsArialMT'),
+          url('/file/css/fontsArialMT.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fontsArialMT.woff2') format('woff2'),
+          url('/file/css/fontsArialMT.woff') format('woff'),
+          url('/file/css/fontsArialMT.ttf') format('truetype'),
+          url('/file/css/fontsArialMT.svg#Arial') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+
+@font-face {
+     font-family: 'Arial';
+     src: url('/file/css/fonts/Arial.eot');
+     src: local('/file/css/fonts/Arial'), local('/file/css/fonts/Arial'),
+          url('/file/css/fonts/Arial.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Arial.woff2') format('woff2'),
+          url('/file/css/fonts/Arial.woff') format('woff'),
+          url('/file/css/fonts/Arial.ttf') format('truetype'),
+          url('/file/css/fonts/Arial.svg#Arial') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+
+@font-face {
+     font-family: 'MontserratBold';
+     src: url('/file/css/fonts/Montserrat-Bold.eot');
+     src: local('/file/css/fonts/Montserrat-Bold'), local('/file/css/fonts/Montserrat-Bold'),
+          url('/file/css/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Montserrat-Bold.woff2') format('woff2'),
+          url('/file/css/fonts/Montserrat-Bold.woff') format('woff'),
+          url('/file/css/fonts/Montserrat-Bold.ttf') format('truetype'),
+          url('/file/css/fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'MontserratLight';
+     src: url('/file/css/fonts/Montserrat-Light.eot');
+     src: local('/file/css/fonts/Montserrat-Light'), local('/file/css/fonts/Montserrat-Light'),
+          url('/file/css/fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Montserrat-Light.woff2') format('woff2'),
+          url('/file/css/fonts/Montserrat-Light.woff') format('woff'),
+          url('/file/css/fonts/Montserrat-Light.ttf') format('truetype'),
+          url('/file/css/fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'MontserratMedium';
+     src: url('/file/css/fonts/Montserrat-Medium.eot');
+     src: local('/file/css/fonts/Montserrat-Medium'), local('/file/css/fonts/Montserrat-Medium'),
+          url('/file/css/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Montserrat-Medium.woff2') format('woff2'),
+          url('/file/css/fonts/Montserrat-Medium.woff') format('woff'),
+          url('/file/css/fonts/Montserrat-Medium.ttf') format('truetype'),
+          url('/file/css/fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'MontserratSemiBold';
+     src: url('/file/css/fonts/Montserrat-SemiBold.eot');
+     src: local('/file/css/fonts/FSAlbert Regular'), local('/file/css/fonts/Montserrat-SemiBold'),
+          url('/file/css/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+          url('/file/css/fonts/Montserrat-SemiBold.woff') format('woff'),
+          url('/file/css/fonts/Montserrat-SemiBold.ttf') format('truetype'),
+          url('/file/css/fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'MontserratRegular';
+     src: url('/file/css/fonts/Montserrat-Regular.eot');
+     src: local('/file/css/fonts/Montserrat-Regular'), local('/file/css/fonts/Montserrat-Regular'),
+          url('/file/css/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Montserrat-Regular.woff2') format('woff2'),
+          url('/file/css/fonts/Montserrat-Regular.woff') format('woff'),
+          url('/file/css/fonts/Montserrat-Regular.ttf') format('truetype'),
+          url('/file/css/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'FSAlbertRegular';
+     src: url('/file/css/fonts/FSAlbert-Regular.eot');
+     src: local('/file/css/fonts/FSAlbert Regular'), local('/file/css/fonts/FSAlbert-Regular'),
+          url('/file/css/fonts/FSAlbert-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/FSAlbert-Regular.woff2') format('woff2'),
+          url('/file/css/fonts/FSAlbert-Regular.woff') format('woff'),
+          url('/file/css/fonts/FSAlbert-Regular.ttf') format('truetype'),
+          url('/file/css/fonts/FSAlbert-Regular.svg#FSAlbert-Regular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'FSAlbertBold';
+     src: url('/file/css/fonts/FSAlbert-Bold.eot');
+     src: local('/file/css/fonts/FSAlbert-Bold'),
+          url('/file/css/fonts/FSAlbert-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/FSAlbert-Bold.woff2') format('woff2'),
+          url('/file/css/fonts/FSAlbert-Bold.woff') format('woff'),
+          url('/file/css/fonts/FSAlbert-Bold.ttf') format('truetype'),
+          url('/file/css/fonts/FSAlbert-Bold.svg#FSAlbert-Bold') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'GraphieBold';
+     src: url('/file/css/fonts/Graphie-Bold.eot');
+     src: local('/file/css/fonts/Graphie-Bold'),
+          url('/file/css/fonts/Graphie-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Graphie-Bold.woff2') format('woff2'),
+          url('/file/css/fonts/Graphie-Bold.woff') format('woff'),
+          url('/file/css/fonts/Graphie-Bold.ttf') format('truetype'),
+          url('/file/css/fonts/Graphie-Bold.svg#Graphie-Bold') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'GraphieRegular';
+     src: url('/file/css/fonts/Graphie-Regular.eot');
+     src: local('/file/css/fonts/Graphie-Regular'),
+          url('/file/css/fonts/Graphie-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Graphie-Regular.woff2') format('woff2'),
+          url('/file/css/fonts/Graphie-Regular.woff') format('woff'),
+          url('/file/css/fonts/Graphie-Regular.ttf') format('truetype'),
+          url('/file/css/fonts/Graphie-Regular.svg#Graphie-Regular') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+@font-face {
+     font-family: 'OpenSansBold';
+     src: url('/file/css/fonts/OpenSans-Bold.eot');
+     src: local('/file/css/fonts/OpenSans-Bold'),
+          url('/file/css/fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/OpenSans-Bold.woff2') format('woff2'),
+          url('/file/css/fonts/OpenSans-Bold.woff') format('woff'),
+          url('/file/css/fonts/OpenSans-Bold.ttf') format('truetype'),
+          url('/file/css/fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+}
+
+@font-face {
+     font-family: 'FSAlbertBoldItalic';
+     src: url('/file/css/fonts/FSAlbert-BoldItalic.eot');
+     src: local('/file/css/fonts/FSAlbert-BoldItalic'),
+          url('/file/css/fonts/FSAlbert-BoldItalic.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/FSAlbert-BoldItalic.woff2') format('woff2'),
+          url('/file/css/fonts/FSAlbert-BoldItalic.woff') format('woff'),
+          url('/file/css/fonts/FSAlbert-BoldItalic.ttf') format('truetype'),
+          url('/file/css/fonts/FSAlbert-BoldItalic.svg#FSAlbert-BoldItalic') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'FSAlbertLight';
+     src: url('/file/css/fonts/FSAlbert-Light.eot');
+     src: local('/file/css/fonts/FSAlbert Light'), local('/file/css/fonts/FSAlbert-Light'),
+          url('/file/css/fonts/FSAlbert-Light.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/FSAlbert-Light.woff2') format('woff2'),
+          url('/file/css/fonts/FSAlbert-Light.woff') format('woff'),
+          url('/file/css/fonts/FSAlbert-Light.ttf') format('truetype'),
+          url('/file/css/fonts/FSAlbert-Light.svg#FSAlbert-Light') format('svg');
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+}

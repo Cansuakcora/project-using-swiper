@@ -1,0 +1,272 @@
+.banner {
+    @include media1400 {
+        font-size: 14px;
+    }
+
+    @include media991 {
+        font-size: 12px;
+    }
+
+    padding: 7em 0 5em 0;
+    height: 100vh;
+
+    // @include  media1100 {
+    //     height: calc(100vh - 500px);
+    // }
+
+    @include media500 {
+        height: calc(100vh - 300px);
+    }
+
+    &__title {
+
+        font-size: 65px;
+        font-family: 'MontserratBold', sans-serif;
+        color: $color-white;
+
+        @include media-min1400 {
+            font-size: 80px;
+        }
+
+        @include media-min1600 {
+            font-size: 90px;
+        }
+
+        @include media766 {
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 32px;
+        font-family: 'MontserratLight', sans-serif;
+        color: $color-white;
+
+
+        @include media-min1400 {
+            font-size: 36px;
+        }
+
+        @include media766 {
+            text-align: right;
+            font-size: 16px;
+        }
+
+    }
+
+    &__info {
+        color: $color-white;
+        font-family: 'MontserratMedium', sans-serif;
+        font-size: 17px;
+
+        @include media-min1400 {
+            font-size: 21px;
+        }
+
+        @include media-min1600 {
+            font-size: 23.5px;
+        }
+
+        @include media766 {
+            text-align: center;
+            font-size: 16px;
+
+        }
+
+    }
+
+}
+
+.banner-video {
+
+    padding: 7em 0 11em 0;
+    height: calc(100vh - 100px);
+
+    @include media1400 {
+        font-size: 14px;
+    }
+
+    @include media1200 {
+        height: calc(100vh - 300px);
+    }
+
+    @include media991 {
+        font-size: 12px;
+        padding: 7em 0 12em 0;
+        height: calc(100vh + 100px);
+    }
+
+    @include media766 {
+        height: calc(100vh - 35px);
+    }
+
+    @include media500 {
+        height: 330px;
+    }
+
+    // @include media330 {
+    //     height: calc(100vh - 260px);
+    // }
+
+
+    &__title {
+
+        font-size: 60px;
+        font-family: 'MontserratBold', sans-serif;
+        color: $color-white;
+        letter-spacing: 2px;
+        margin-bottom: 3rem;
+
+        span {
+            font-family: 'FSAlbertRegular', sans-serif;
+            margin: 0 1.5rem;
+        }
+
+        @include media-min1400 {
+            font-size: 70px;
+        }
+
+        @include media-min1600 {
+            font-size: 80px;
+        }
+
+        @include media1199 {
+            margin-bottom: 8rem;
+        }
+
+        @include media991 {
+            margin-bottom: 0;
+            font-size: 35px;
+        }
+
+        @include media766 {
+            font-size: 26px;
+            margin-bottom: 0;
+        }
+
+        @include media360 {
+            font-size: 20px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 32px;
+        font-family: 'MontserratLight', sans-serif;
+        color: $color-white;
+
+
+        @include media-min1400 {
+            font-size: 36px;
+        }
+
+    }
+
+    &__back-pstn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 4rem;
+
+        @include media-min1600 {
+            margin-top: 5rem;
+        }
+
+        @include media991 {
+            margin-top: 5rem;
+        }
+
+        @include media766 {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__back-btn {
+        width: 30px;
+        width: 100%;
+        max-width: 55px;
+        transition: all .5s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__lang {
+        background-color: #5073BD;
+        padding: .6rem 1rem;
+        width: 100%;
+        max-width: 220px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 5px;
+        color: #fff;
+        font-family: 'MontserratBold', sans-serif;
+        cursor: pointer;
+
+        @include media-min1600 {
+            max-width: 240px;
+        }
+    }
+
+    &__lang-link {
+        color: #fff;
+        margin: 0 1rem;
+        font-size: 16px;
+        text-transform: uppercase;
+
+        @include media-min1600 {
+            font-size: 18px;
+        }
+
+        &:hover {
+            color: $color-purple;
+        }
+    }
+
+    &__info {
+        color: $color-white;
+        font-family: 'MontserratMedium', sans-serif;
+        font-size: 17px;
+
+        @include media-min1400 {
+            font-size: 21px;
+        }
+
+        @include media-min1600 {
+            font-size: 23.5px;
+        }
+
+
+
+    }
+
+}
+
+
+
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+    .speakers__title,
+    .btn-banner,
+    .btn-speaker-date,
+    .webinar-info__title,
+    .time-by-city__title,
+    .upcoming-events__title,
+    .teaser__info__title,
+    .schedule__title {
+        font-weight: bold;
+
+    }
+
+    .banner__subtitle,
+    .banner__title {
+        // font-style: italic;
+        font-weight: bold;
+    }
+}

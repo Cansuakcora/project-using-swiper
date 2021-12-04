@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatAm Aria Academy | Landing</title>
+    <link rel="stylesheet" href="/file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/file/css/main.css">
+    <link rel="stylesheet" href="/file/css/swiper.min.css">
+
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav-desktop">
+            <div class="container">
+                <div class="row flex-start-wrap ie-mt-2">
+                    <div class="col-2 col-md-2 col-lg-1">
+                        <!-- <a href="/"> -->
+                            <img src="/file/image/logo-vistream.png" alt="Logo"
+                                class="nav-desktop__logo nav-desktop__logo-left">
+                        <!-- </a> -->
+                    </div>
+                    <div class="col-10 col-md-10 col-lg-10 ml-xss flex-end-jstf">
+                        <ul class="nav-desktop__list">
+                            <li id="modal__search"> <input type="text" id="myInput" onkeyup="myFunction()"
+                                class="form-control form-card__input form-card__search header__search"
+                                placeholder="Palabras clave..."> <img src="/file/image/input-arrow.png"
+                                class="nav-desktop__arrow"></li>
+                            </li>
+                            <li class="nav-desktop__list__item"><img src="/file/image/search.png"
+                                    class="nav-desktop__icon" id="search-icon">
+                                    <img src="/file/image/arrow-active.png" class="nav-desktop__icon-active" id="search-icon-active">
+                            </li>
+                            <li class="nav-desktop__list__item"><img src="/file/image/user.png"
+                                    class="nav-desktop__icon" id="user-icon">
+                                    <img src="/file/image/user-active.png"  class="nav-desktop__icon-active" id="user-icon-active">
+                            </li>
+                            <li class="nav-desktop__list__item"><img src="/file/image/menu.png"
+                                    class="nav-desktop__icon" id="menu-icon">
+                                    <img src="/file/image/menu-active.png"  class="nav-desktop__icon-active" id="menu-icon-active">
+                            </li>
+
+                        </ul>
+
+                        <div class="modal__menu">
+                            <button type="button" class="close modal__close modal__close-menu">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <a href="/video.html" class="modal__menu-link">VIDEOS</a>
+                            <a href="#" class="modal__menu-link">PODCAST</a>
+                            <a href="#" class="modal__menu-link">EVENTOS</a>
+                            <a href="#" class="modal__menu-link">NEWS</a>
+                        </div>
+
+                        <div class="modal__login">
+                            <button type="button" class="close modal__close modal__close-login" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <h3 class="form-card__title">INICIAR SESIÓN</h3>
+
+                            <form action="" id="login_form" method="post">
+                                <!-- [FULLNAME] -->
+                                <div class="form-group">
+                                    <input class="form-control form-card__input" type="text" id="fullname"
+                                        name="fullname" maxlength="50" required placeholder="Usuario">
+                                </div>
+                                <!-- [FULLNAME] -->
+
+                                <!-- [PASWWORD] -->
+                                <div class="form-group password-group">
+                                    <small class="dn animation-password">{error_password}</small> </label>
+                                    <input class="form-control form-card__input" type="password" id=" password"
+                                        name="password" required placeholder="Contraseña">
+                                </div>
+                                <!-- [PASWWORD] -->
+
+                                <!-- HIDE PASWWORD -->
+                                <!-- <input type="hidden" name="password" value="pfizer" /> -->
+                                <!-- HIDE PASWWORD -->
+
+
+                                <!-- [BUTTON] -->
+                                <div class="form-card__btn-pstn">
+                                    <a class="form-card__link" href="#">Olvidaste tu contraseña?</a>
+                                    <button class="btn-banner btn-animation-1">Entrar</button>
+                                </div>
+                                <!-- [BUTTON] -->
+                            </form>
+
+                            <div class="modal__login-hr"></div>
+                            <p class="modal__login-text">Si no tienes acceso</p>
+                            <a class="modal__login-register btn-animation-1">Regístrate aquí</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main myUL">
+
+        <section class="banner bg-banner" id="banner">
+            <div class="container-fluid flex-end-all">
+                <p class="banner__subtitle">Bienvenido a nuestro sitio</p>
+                <h3 class="banner__title">ON DEMAND</h3>
+                <p class="banner__info">Acceda a todo el material que tenemos para usted.</p>
+            </div>
+        </section>
+
+        <div class="border-white"></div>
+
+        <section class="webinar-info" id="webinar-info">
+            <div class="container-fluid">
+                <div class="webinar-info__flex">
+                    <div class="webinar-info__limit myli">
+                        <h3 class="webinar-info__title"><span>|</span> VIDEOS <span>|</span> </h3>
+                        <a href="/video.html">
+                        <img src="/file/image/webinar-info-banner1.png" class="webinar-info__img">
+                        <img src="/file/image/hover-btn.png" class="webinar-info__yellow-img">
+                        
+                        <div class="webinar-info__box">
+                            <h4 class="webinar-info__box-title">Video: <span>Ansiedad y cormobilidades</span></h4>
+                            <p class="webinar-info__box-subtitle">Para esta y más videos sobre Psiquiatría, visite
+                                nuestra plataforma.</p>
+                            <a href="/video" class="webinar-info__box-link">MÁS VIDEOS ></a>
+                        </div>
+                       </a>  
+                    </div>
+
+                    <div class="webinar-info__limit myli">
+                        <h3 class="webinar-info__title"><span>|</span> PODCAST <span>|</span> </h3>
+                        <img src="/file/image/webinar-info-banner2.png" class="webinar-info__img">
+                        <img src="/file/image/hover-btn.png" class="webinar-info__yellow-img">
+                        <div class="webinar-info__box">
+                            <h4 class="webinar-info__box-title">Podcast:<span>Glaucoma definición, conciencia
+                                    y...</span> </h4>
+                            <p class="webinar-info__box-subtitle">Para esta y más videos sobre Oftamología, visite
+                                nuestra plataforma.</p>
+                            <a href="#" class="webinar-info__box-link">MÁS VIDEOS ></a>
+                        </div>
+
+                    </div>
+
+                    <div class="webinar-info__limit myli">
+                        <h3 class="webinar-info__title"><span>|</span> EVENTOS <span>|</span> </h3>
+                        <img src="/file/image/webinar-info-banner3.png" class="webinar-info__img">
+                        <img src="/file/image/hover-btn.png" class="webinar-info__yellow-img">
+                        <div class="webinar-info__box">
+                            <h4 class="webinar-info__box-title">Webinar: <span>Serie 01 Maestro del Dolor</span></h4>
+                            <p class="webinar-info__box-subtitle">Para esta y más videos sobre Dolor, visite nuestra
+                                plataforma.</p>
+                            <a href="#" class="webinar-info__box-link">MÁS VIDEOS ></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="border-white"></div>
+
+        <section class="slide-section">
+            <div class="container">
+                <h1 class="slide-section__news">NEWS</h1>
+            </div>
+            <div class="container-fluid">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-section__box myli">
+                                <img src="/file/image/news-img1.png" class="slide-section__img">
+
+                                <div class="slide-section__info">
+                                    <p class="slide-section__title">Los resultados adversos del embarazo están
+                                        asociados con
+                                        futuro riesgo cardiovascular</p>
+                                    <p class="slide-section__subtitle">Para esta y más videos sobre Cardiovascular,
+                                        visite
+                                        nuestra plataforma.</p>
+                                    <a href="#" class="slide-section__link">VER MÁS ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-section__box myli">
+                                <img src="/file/image/news-img2.png" class="slide-section__img">
+                                <div class="slide-section__info">
+                                    <p class="slide-section__title">Ansiedad y Depresión pueden hacer que enfermes</p>
+                                    <p class="slide-section__subtitle">Para esta y más videos sobre Cardiovascular,
+                                        visite
+                                        nuestra plataforma.</p>
+                                    <a href="#" class="slide-section__link">VER MÁS ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-section__box myli">
+                                <img src="/file/image/news-img1.png" class="slide-section__img">
+                                <div class="slide-section__info">
+                                    <p class="slide-section__title">Los resultados adversos del embarazo están
+                                        asociados con
+                                        futuro riesgo cardiovascular</p>
+                                    <p class="slide-section__subtitle">Para esta y más videos sobre Cardiovascular,
+                                        visite
+                                        nuestra plataforma.</p>
+                                    <a href="#" class="slide-section__link">VER MÁS ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <div class="slide-section__box">
+                                <img src="/file/image/news-img2.png" class="slide-section__img">
+                                <div class="slide-section__info">
+                                    <p class="slide-section__title">Los resultados adversos del embarazo están
+                                        asociados con
+                                        futuro riesgo cardiovascular</p>
+                                    <p class="slide-section__subtitle">Para esta y más videos sobre Cardiovascular,
+                                        visite
+                                        nuestra plataforma.</p>
+                                    <a href="#" class="slide-section__link">VER MÁS ></a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- Swiper JS -->
+            </div>
+        </section>
+
+        <div class="border-white"></div>
+
+    </main>
+
+  
+    <footer class="footer flex-row-center">
+        <div class="container">
+            <div class="row ie-mt-2">
+                <div class="col-md-4 col-sm-12">
+                    <img src="/file/image/footer-img.png" alt="logo" class="footer__img">
+                    <p class="footer__contanct">Contacto</p>
+                    <p class="footer__middle"> Reporte de Eventos Adversos</p>
+                    <p class="footer__aviso">Aviso de Privacidad</p>
+                    <p class="footer__cme">Síguenos</p>
+                    <div class="footer__icons">
+                        <img src="/file/image/face-icon.png" class="footer__icon">
+                        <img src="/file/image/youtube-icon.png" class="footer__icon">
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 flex-start-sm-colmn">
+                    <p class="footer__info">
+                        Si usted tiene algún evento adverso que reportar o tiene una consulta de información médica para
+                        una marca legado de Upjohn por favor presione <a href="#" class="footer__link">aquí.</a><br><br>
+                        La presente comunicación está dirigida exclusivamente a los profesionales de la salud. Al
+                        acceder al contenido de cualquier enlace dentro de este correo electrónico, está confirmando que
+                        es un profesional de la salud. Si no es un profesional de la salud, tenga en cuenta que no es el
+                        destinatario previsto de este correo electrónico y debe eliminarlo. Al hacer clic en cualquier
+                        enlace externo dentro de este correo electrónico, se le dirigirá a sitios web externos. No somos
+                        responsables del contenido de los sitios web externos. Enviado por Upjohn Export B.V. sucursal
+                        Costa Rica.<br>
+                        Plaza Roble, Edificio las terrazas A, 5to piso Frente a Multiplaza Escazu, San Rafael de Escazu,
+                        10203 San Jose, Costa Rica <br><br>
+                        Si no desea recibir más comunicaciones comerciales, por favor haga clic aquí. Para mayor
+                        información acerca del correo electrónico personalizado, por favor vea nuestra nuestro <a
+                            href="#" class="footer__link">Aviso de Privacidad</a> en Línea, que también incluye
+                        información acerca de las herramientas de monitoreo que utilizamos en nuestras interacciones
+                        digitales y cómo puede manejarlas.<br><br> Por favor no responda este mensaje, ya que las mismas
+                        serán enviadas a un buzón no monitorizado. Si tiene preguntas, por favor <a href="#"
+                            class="footer__link">contáctenos.</a><br><br> XX-XXX-XXX-XXXX
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/file/js/jquery-3.6.0.min.js"></script>
+    <script src="/file/js/bootstrap.min.js"></script>
+    <script src="/file/js/app/main.js"></script>
+    <script src="/file/js/swiper.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 2,
+
+                direction: getDirection(),
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                on: {
+                    resize: function () {
+                        swiper.changeDirection(getDirection());
+                    }
+                }
+            });
+
+            function getDirection() {
+                var windowWidth = window.innerWidth;
+                var direction = window.innerWidth <= 200 ? 'vertical' : 'horizontal';
+                return direction;
+            }
+
+            // window.matchMedia("(max-width: 700px)") {
+            //     var swiper = new Swiper('.swiper-container', {
+            //         slidesPerView: 1,
+            //     });
+            // }
+
+            const mediaQuery = window.matchMedia('(max-width: 1023px)');
+            // Check if the media query is true
+            if (mediaQuery.matches) {
+                // Then trigger an alert
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+
+                    direction: getDirection(),
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    on: {
+                        resize: function () {
+                            swiper.changeDirection(getDirection());
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

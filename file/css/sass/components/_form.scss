@@ -1,0 +1,594 @@
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+
+    small {
+        font-size: 12px;
+        color: #fff;
+        font-family: "FSAlbertBold", sans-serif;
+        position: absolute;
+        top: -17px;
+    }
+
+    select:invalid{
+        color: $color-purple;
+    }
+}
+
+.form-control {
+    position: relative;
+
+}
+
+.form-card {
+    max-width: 400px;
+    width: 100%;
+    background-color: $color-white;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14);
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        margin: 0rem 0 4rem 0;
+
+        @include media991 {
+            margin: 5rem 0 2rem 0;
+        }
+    }
+
+    &__bg {
+        background-color: #713f98db;
+        padding: 3.3rem 2rem 1.5rem;
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+    }
+
+    &__search {
+        width: 300px !important;
+        background-color: #D8D2DC !important;
+
+        @include media991 {
+            position: absolute;
+            left: -5rem;
+            top: 6rem;
+        }
+
+        @include media766 {
+            left: -13rem;
+            top: 4rem;
+        }
+
+        @include media360 {
+            left: -10rem;
+        }
+    }
+
+    &__title {
+        font-size: 1.6em;
+        font-family: 'MontserratSemiBold', sans-serif;
+        text-align: left;
+        color: $color-white;
+        margin-bottom: 1rem;
+        // text-transform: uppercase;
+
+        @include media766 {
+            font-size: 1em;
+        }
+    }
+
+    &__date {
+        font-size: 1.25em;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+
+    &__session-name {
+        font-size: 1em;
+        font-family: "FSAlbertBold", sans-serif;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        // text-transform: uppercase;
+    }
+
+    &__border {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid rgba($color-black-3, 0.15);
+        margin-bottom: 0.8rem;
+    }
+
+    &__input {
+        max-width: 364px;
+        width: 100%;
+        height: 43px;
+        background-color: #E1D7E8;
+        border-radius: 28px;
+        font-size: 1em;
+        color: $color-black-6;
+        appearance: none;
+        padding-left: 1rem;
+        border: none;
+        font-family: 'FSAlbertRegular' ,sans-serif;
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        @include media766 {
+            height: 35px;
+        }
+
+        @include media360 {
+            max-width: 260px;
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        min-height: 162px !important;
+        padding: 12px 12px;
+        border-radius: 7px;
+        font-size: 1em;
+        color: $color-black-6;
+        background-color: $color-gray-light-2;
+        resize: vertical;
+    }
+
+    &__link {
+        color: $color-white;
+        text-decoration: underline;
+        font-size: 15px;
+
+        &:hover {
+            color: $color-white;
+            text-decoration: underline;
+        }
+    }
+
+    &__btn-pstn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__close-btn {
+        padding: 1px 0px;
+        background-color: #000000;
+        border-radius: 100%;
+        width: 28px;
+        height: 28px;
+        margin: 0;
+        opacity: 1;
+        font-weight: 700;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        span {
+            font-size: 28px;
+            line-height: 26px;
+            color: $color-white;
+            margin-left: 0.37rem;
+        }
+    }
+
+    select {
+        // text-indent: 17px;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+            padding-left: 1.8rem;
+        }
+
+        @-moz-document url-prefix() {
+            padding-left: 0rem;
+            text-indent: 14px;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            padding-left: 0rem;
+            text-indent: 32px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 16px;
+        left: 12px;
+        color: #999999;
+    }
+
+    &__checkboxs {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 12px;
+        color: $color-purple;
+        margin-left: 1.5rem;
+        display: block;
+
+        a {
+            color: #00b8ff;
+            text-decoration: underline;
+
+            &:hover {
+                color:#00b8ff;
+                text-decoration: underline;
+            }
+        }
+
+        span{
+            font-family: 'FSAlbertBold' ,sans-serif;
+        }
+    }
+
+    &__description {
+        font-size: 10px;
+        color: $color-black-6;
+        margin-bottom: 1rem;
+    }
+}
+
+.form-card-register {
+    max-width: 400px;
+    width: 100%;
+    background-color: $color-white;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14);
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        margin: 0rem 0 4rem 0;
+
+        @include media991 {
+            margin: 5rem 0 2rem 0;
+        }
+    }
+
+    &__bg {
+        background-color: #713f98db;
+        padding: 3.3rem 2rem 1.5rem;
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+    }
+
+    &__search {
+        width: 300px !important;
+        background-color: #D8D2DC !important;
+
+        @include media991 {
+            position: absolute;
+            left: -5rem;
+            top: 6rem;
+        }
+
+        @include media766 {
+            left: -13rem;
+            top: 4rem;
+        }
+
+        @include media360 {
+            left: -10rem;
+        }
+    }
+
+    &__title {
+        font-size: 1.8em;
+        font-family: 'FSAlbertBold', sans-serif;
+        text-align: left;
+        color: $color-navy-blue-5;
+        margin-bottom: 1rem;
+        text-align: center;
+        // text-transform: uppercase;
+
+        @include media766 {
+            font-size: 1em;
+        }
+    }
+
+    &__date {
+        font-size: 1.25em;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+
+    &__session-name {
+        font-size: 1em;
+        font-family: "FSAlbertBold", sans-serif;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        // text-transform: uppercase;
+    }
+
+    &__border {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid rgba($color-black-3, 0.15);
+        margin-bottom: 0.8rem;
+    }
+
+    &__input {
+        max-width: 364px;
+        width: 100%;
+        height: 39px;
+        background-color: #F2F2F5;
+        border-radius: 5px;
+        font-size: 1em;
+        color: $color-black-6;
+        appearance: auto;
+        padding-left: .8rem;
+        border: 1.4px solid #E5E9F1;
+        font-family: 'FSAlbertRegular' ,sans-serif;
+
+        &:invalid{
+            color: $color-purple;
+        }
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        @include media766 {
+            height: 35px;
+        }
+
+        @include media360 {
+            max-width: 260px;
+        }
+    }
+
+    &__label {
+        margin-bottom: 0.2rem;
+        color: $color-purple;
+        font-family: 'MontserratMedium' ,sans-serif;
+    }
+
+    &__textarea {
+        width: 100%;
+        min-height: 162px !important;
+        padding: 12px 12px;
+        border-radius: 7px;
+        font-size: 1em;
+        color: $color-black-6;
+        background-color: $color-gray-light-2;
+        resize: vertical;
+    }
+
+    &__link {
+        color: $color-white;
+        text-decoration: underline;
+        font-size: 15px;
+
+        &:hover {
+            color: $color-white;
+            text-decoration: underline;
+        }
+    }
+
+    &__btn-pstn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__close-btn {
+        padding: 1px 0px;
+        background-color: #000000;
+        border-radius: 100%;
+        width: 28px;
+        height: 28px;
+        margin: 0;
+        opacity: 1;
+        font-weight: 700;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        span {
+            font-size: 28px;
+            line-height: 26px;
+            color: $color-white;
+            margin-left: 0.37rem;
+        }
+    }
+
+    select {
+        // text-indent: 17px;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+            padding-left: 1.8rem;
+        }
+
+        @-moz-document url-prefix() {
+            padding-left: 0rem;
+            text-indent: 14px;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            padding-left: 0rem;
+            text-indent: 32px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 16px;
+        left: 12px;
+        color: #999999;
+    }
+
+    &__checkboxs {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 13px;
+        color: $color-purple;
+        margin-left: 1.5rem;
+        display: block;
+
+        a {
+            color: $color-blue-3;
+
+            &:hover {
+                color: $color-blue-3;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__description {
+        font-size: 10px;
+        color: $color-black-6;
+        margin-bottom: 1rem;
+    }
+}
+
+/* [ REGISTER CHECKBOX  START ] */
+.checkbox-label {
+    // display: inline;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 13px;
+    // line-height: 18px;
+    // height: 18px;
+    // width: 18px;
+    clear: both;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .form-card__span {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 2px solid $color-purple;
+}
+
+.checkbox-label input:checked~.form-card__span {
+    background-color: $color-purple;
+    border-radius: 2px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    border: 2px solid $color-purple;
+}
+
+.checkbox-label .form-card__span::after {
+    position: absolute;
+    content: "";
+    left: 8px;
+    top: 8px;
+    height: 0px;
+    width: 0px;
+    border-radius: 4px;
+    border: solid $color-navy-blue;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.checkbox-label input:checked~.form-card__span::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 5px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid $color-white;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* For Ripple Effect */
+.checkbox-label .form-card__span::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid $color-white;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.checkbox-label input:checked~.form-card__span::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity: 0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+/* [ REGISTER CHECKBOX  END ] */
+
+
+.fa-arrow-right:before{
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 0.35rem 0.4rem;
+    font-size: 15px;
+}
+
+
+.dn{
+    display: none;
+   
+}
+.lgnInputText{
+    color: red;
+}
+// .small, small{
+//     font-size: 76%;
+//     font-weight: 400;
+//     position: absolute;
+//     bottom: 2.8rem;
+// }

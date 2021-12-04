@@ -1,0 +1,49 @@
+.thankyou_card {
+    padding: 6rem 0;
+
+    &-title {
+        text-align: center;
+        color: #713F98;
+        font-family: 'MontserratBold', sans-serif;
+        font-size: 70px;
+        margin-bottom: 2rem;
+
+        @include media-min1600{
+            font-size: 85px;
+        }
+    }
+
+    &-click {
+        background-color: #744691;
+        width: 100%;
+        max-width: 375px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'MontserratBold', sans-serif;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        margin: 0px auto;
+        font-size: 22px;
+        border: 3px solid $color-navy-blue-5;
+        transition: all .5s;
+
+        &:hover{
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        @include media-min1600{
+            max-width: 400px;
+            padding: .7rem 1.5rem;
+        }
+    }
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .card-time {
+        max-width: 365px;
+    }
+}

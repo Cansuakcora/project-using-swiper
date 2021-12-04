@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatAm Aria Academy | Landing</title>
+    <link rel="stylesheet" href="/file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/file/css/main.css">
+
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav-desktop">
+            <div class="container">
+                <div class="row flex-start-wrap ie-mt-2">
+                    <div class="col-2 col-md-2 col-lg-1">
+                        <!-- <a href="/"> -->
+                            <img src="/file/image/logo-vistream.png" alt="Logo"
+                                class="nav-desktop__logo nav-desktop__logo-left">
+                        <!-- </a> -->
+                    </div>
+                    <div class="col-10 col-md-10 col-lg-10 ml-xss flex-end-jstf">
+                        <ul class="nav-desktop__list">
+                            <li id="modal__search"> <input type="text" id="myInput" onkeyup="myFunction()"
+                                class="form-control form-card__input form-card__search header__search"
+                                placeholder="Palabras clave..."> <img src="/file/image/input-arrow.png"
+                                class="nav-desktop__arrow"></li>
+                            </li>
+                            <li class="nav-desktop__list__item"><img src="/file/image/search.png"
+                                    class="nav-desktop__icon" id="search-icon">
+                                    <img src="/file/image/arrow-active.png" class="nav-desktop__icon-active" id="search-icon-active">
+                            </li>
+                            <li class="nav-desktop__list__item"><img src="/file/image/user.png"
+                                    class="nav-desktop__icon" id="user-icon">
+                                    <img src="/file/image/user-active.png"  class="nav-desktop__icon-active" id="user-icon-active">
+                            </li>
+                            <li class="nav-desktop__list__item"><img src="/file/image/menu.png"
+                                    class="nav-desktop__icon" id="menu-icon">
+                                    <img src="/file/image/menu-active.png"  class="nav-desktop__icon-active" id="menu-icon-active">
+                            </li>
+
+                        </ul>
+
+                        <div class="modal__menu">
+                            <button type="button" class="close modal__close modal__close-menu">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <a href="#" class="modal__menu-link">VIDEOS</a>
+                            <a href="#" class="modal__menu-link">PODCAST</a>
+                            <a href="#" class="modal__menu-link">EVENTOS</a>
+                            <a href="#" class="modal__menu-link">NEWS</a>
+                        </div>
+
+                        <div class="modal__login">
+                            <button type="button" class="close modal__close modal__close-login" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <h3 class="form-card__title">INICIAR SESIÓN</h3>
+
+                            <form action="" id="login_form" method="post">
+                                <!-- [FULLNAME] -->
+                                <div class="form-group">
+                                    <input class="form-control form-card__input" type="text" id="fullname"
+                                        name="fullname" maxlength="50" required placeholder="Usuario">
+                                </div>
+                                <!-- [FULLNAME] -->
+
+                                <!-- [PASWWORD] -->
+                                <div class="form-group password-group">
+                                    <small class="dn animation-password">{error_password}</small> </label>
+                                    <input class="form-control form-card__input" type="password" id=" password"
+                                        name="password" required placeholder="Contraseña">
+                                </div>
+                                <!-- [PASWWORD] -->
+
+                                <!-- HIDE PASWWORD -->
+                                <!-- <input type="hidden" name="password" value="pfizer" /> -->
+                                <!-- HIDE PASWWORD -->
+
+
+                                <!-- [BUTTON] -->
+                                <div class="form-card__btn-pstn">
+                                    <a class="form-card__link" href="#">Olvidaste tu contraseña?</a>
+                                    <button class="btn-banner btn-animation-1">Entrar</button>
+                                </div>
+                                <!-- [BUTTON] -->
+                            </form>
+
+                            <div class="modal__login-hr"></div>
+                            <p class="modal__login-text">Si no tienes acceso</p>
+                            <a class="modal__login-register btn-animation-1">Regístrate aquí</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="banner-video bg-banner-video" id="banner-video">
+            <div class="container">
+                <div class="banner-video__back-pstn">
+                    <a href="/landing"> <img src="/file/image/back-btn.png" class="banner-video__back-btn"></a>
+                    <div class="banner-video__lang">
+                        <a class="banner-video__lang-link">EN</a> | <a class="banner-video__lang-link">ES</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-fluid flex-end-all-video">
+                <h3 class="banner-video__title"><span>|</span> VIDEOS <span>|</span></h3>
+                <!-- DESKTOP BUTTONS -->
+                <div class="video-head__buttons">
+                    <p class="video-head__btn video-head__btn-active btn1" >
+                        <img src="/file/image/dolor-icon.png" class="video-head__icon">LO MÁS RECIENTE</p>
+                    <p class="video-head__btn btn2">
+                        <img src="/file/image/central-icon.png" class="video-head__icon">DOLOR</p>
+                </div>
+                <!-- DESKTOP BUTTONS -->
+
+                <!-- MOBILE BUTTONS -->
+                <div id="mobile-dot">
+                    <span class="video-head__mobile-btn"></span>
+                    <span class="video-head__mobile-btn"></span>
+                    <span class="video-head__mobile-btn"></span>
+                </div>
+
+
+                <div class="modal__mobile-menu">
+                    <img src="/file/image/modal-close.png" class="close modal__close-mobile modal__close-mobile-menu">
+
+                    <a href="#" class="modal__menu-link btn1">LO MÁS RECIENTE </a>
+                    <a href="#" class="modal__menu-link btn2">DOLOR </a>
+                </div>
+
+                <!-- MOBILE BUTTONS -->
+            </div>
+        </section>
+
+        <!-- VIDEO DETAIL -->
+        <section class="video-detail" id="video-detail">
+            <div class="container">
+                <p class="video-detail__topic">Osteoartritis:
+                    <span class="video-detail__subtitle">Una enfermedad de la inflamación</span>
+                    <span class="video-detail__speaker">Dolor</span>
+                    <div class="video-detail__pstn">
+                        <img src="/file/image/demo-video.png" class="video-detail__img">
+                    </div>
+                </p>
+            </div>
+        </section>
+        <!-- VIDEO DETAIL -->
+
+        <section class="myUL video-head">
+            <div class="container">
+                <div class=" video-head__box" id="video-page1">
+                    <div class="video-head__info myli">
+                        <img src="/file/image/dolor-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Osteoartritis:
+                            <span class="video-head__subtitle">Una enfermedad de la inflamación</span>
+                            <span class="video-head__speaker">Dolor</span>
+                        </p>
+                    </div>
+
+                    <div class="video-head__info myli">
+                        <img src="/file/image/dolor-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Dolor Ginecológico
+                            <span class="video-head__subtitle"></span>
+                            <span class="video-head__speaker">Dolor</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/dolor-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Dolor Bucodental
+                            <span class="video-head__subtitle"></span>
+                            <span class="video-head__speaker">Dolor</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/viatris-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Estigma de la Salud Mental </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/viatris-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Tratamiento de la depresión </span>
+                            <span class="video-head__speaker">Sistema Nervioso Centralv</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/viatris-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Depresión y Ansiedad </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video-head__box video-head__hide" id="video-page2">
+                    <div class="video-head__info myli">
+                        <img src="/file/image/viatris-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Estigma de la Salud</span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/viatris-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Tratamiento de la depresión </span>
+                            <span class="video-head__speaker">Sistema Nervioso Centralv</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/viatris-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Depresión y Ansiedad </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/dolor-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Explorando la relación entre la DE y las enfermedades CV-01
+                            <span class="video-head__subtitle"> </span>
+                            <span class="video-head__speaker">Cardiovascular</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video-head__box video-head__hide" id="video-page3">
+                    <div class="video-head__info myli">
+                        <img src="/file/image/dolor-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Depresión y Ansiedad </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/dolor-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Depresión y Ansiedad </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="video-head__box video-head__hide" id="video-page4">
+                    <div class="video-head__info myli">
+                        <img src="/file/image/viatris-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Depresión y Ansiedad </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/viatris-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Depresión y Ansiedad </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video-head__box video-head__hide" id="video-page5">
+                    <div class="video-head__info myli">
+                        <img src="/file/image/viatris-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Depresión y Ansiedad </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/dolor-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Depresión y Ansiedad </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="video-head__box video-head__hide" id="video-page6">
+                    <div class="video-head__info myli">
+                        <img src="/file/image/dolor-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Depresión y Ansiedad </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <img src="/file/image/dolor-banner.png" class="video-head__img">
+                        <p class="video-head__topic">Viatris Semana Amarilla:
+                            <span class="video-head__subtitle">Depresión y Ansiedad </span>
+                            <span class="video-head__speaker">Sistema Nervioso Central</span>
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer flex-row-center">
+        <div class="container">
+            <div class="row ie-mt-2">
+                <div class="col-md-4 col-sm-12">
+                    <img src="/file/image/footer-img.png" alt="logo" class="footer__img">
+                    <p class="footer__contanct">Contacto</p>
+                    <p class="footer__middle"> Reporte de Eventos Adversos</p>
+                    <p class="footer__aviso">Aviso de Privacidad</p>
+                    <p class="footer__cme">Síguenos</p>
+                    <div class="footer__icons">
+                        <img src="/file/image/face-icon.png" class="footer__icon">
+                        <img src="/file/image/youtube-icon.png" class="footer__icon">
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 flex-start-sm-colmn">
+                    <p class="footer__info">
+                        Si usted tiene algún evento adverso que reportar o tiene una consulta de información médica para
+                        una marca legado de Upjohn por favor presione <a href="#" class="footer__link">aquí.</a><br><br>
+                        La presente comunicación está dirigida exclusivamente a los profesionales de la salud. Al
+                        acceder al contenido de cualquier enlace dentro de este correo electrónico, está confirmando que
+                        es un profesional de la salud. Si no es un profesional de la salud, tenga en cuenta que no es el
+                        destinatario previsto de este correo electrónico y debe eliminarlo. Al hacer clic en cualquier
+                        enlace externo dentro de este correo electrónico, se le dirigirá a sitios web externos. No somos
+                        responsables del contenido de los sitios web externos. Enviado por Upjohn Export B.V. sucursal
+                        Costa Rica.<br>
+                        Plaza Roble, Edificio las terrazas A, 5to piso Frente a Multiplaza Escazu, San Rafael de Escazu,
+                        10203 San Jose, Costa Rica <br><br>
+                        Si no desea recibir más comunicaciones comerciales, por favor haga clic aquí. Para mayor
+                        información acerca del correo electrónico personalizado, por favor vea nuestra nuestro <a
+                            href="#" class="footer__link">Aviso de Privacidad</a> en Línea, que también incluye
+                        información acerca de las herramientas de monitoreo que utilizamos en nuestras interacciones
+                        digitales y cómo puede manejarlas.<br><br> Por favor no responda este mensaje, ya que las mismas
+                        serán enviadas a un buzón no monitorizado. Si tiene preguntas, por favor <a href="#"
+                            class="footer__link">contáctenos.</a><br><br> XX-XXX-XXX-XXXX
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/file/js/jquery-3.6.0.min.js"></script>
+    <script src="/file/js/bootstrap.min.js"></script>
+    <script src="/file/js/app/main.js"></script>
+
+</body>
+
+</html>

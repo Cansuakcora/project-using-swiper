@@ -1,0 +1,364 @@
+//! BG IMAGE
+.bg-banner {
+  background-image: url(/file/image/bg-banner.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @include media991 {
+    background-size: cover;
+  }
+
+  @include media766 {
+    background-image: url(/file/image/mobile-bg-banner.png);
+    background-size: 100% 100%;
+  }
+}
+
+.bg-banner-video {
+  background-image: url(/file/image/video-banner.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  @include media991 {
+    background-size: cover;
+  }
+
+  @include media766 {
+    background-image: url(/file/image/mobile-video-banner.png);
+    background-size: 100% 100%;
+  }
+
+}
+
+.bg-banner-podcast {
+  background-image: url(/file/image/bg-podcast.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  @include media991 {
+    background-size: cover;
+  }
+
+  @include media766 {
+    background-image: url(/file/image/mobile-bg-podcast.png);
+    background-size: 100% 100%;
+  }
+
+}
+
+.bg-banner-eventos {
+  background-image: url(/file/image/bg-eventos.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  @include media991 {
+    background-size: cover;
+  }
+
+  @include media766 {
+    background-image: url(/file/image/mobile-bg-eventos.png);
+    background-size: 100% 100%;
+  }
+
+}
+
+.bg-banner-new {
+  background-image: url(/file/image/bg-new.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  @include media991 {
+    background-size: cover;
+  }
+
+  @include media766 {
+    background-image: url(/file/image/mobile-bg-news.png);
+    background-size: 100% 100%;
+  }
+
+}
+
+.border-white {
+  background-color: $color-white;
+  height: 30px;
+  width: 100%;
+}
+
+.bg-schedule {
+  // background-image: url(/file/image/bg-schedule.png);
+  background-color: $color-blue-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-pain{
+  background-image: url(/file/image/pain-banner.png);
+}
+
+.bg-all{
+  background-image: url(/file/image/bg-new.png);
+}
+
+.bg-psy{
+  background-image: url(/file/image/psy-banner.png);
+}
+
+.bg-neu{
+  background-image: url(/file/image/neu-banner.png);
+}
+
+.bg-card{
+  background-image: url(/file/image/card-banner.png);
+}
+
+.bg-im{
+  background-image: url(/file/image/im-banner.png);
+}
+
+.bg-oph{
+  background-image: url(/file/image/oph-banner.png);
+}
+
+.bg-uro{
+  background-image: url(/file/image/uro-banner.png);
+}
+
+.bg-phar{
+  background-image: url(/file/image/phar-banner.png);
+}
+
+
+//BG COLOR
+.bg-color-one {}
+
+.bg-color-two {}
+
+.bg-yellow {
+  background-color: $color-yellow ;
+}
+
+.bg-white {
+  background-color: $color-white !important;
+  padding: 5rem 0 3rem !important;
+
+  @include media766{
+  padding: 2rem 0 !important;
+
+  }
+}
+
+.bg-gray {
+  background-color: #E5E6E7 !important;
+  padding: 3rem 0 4rem !important;
+}
+
+.animation-password {
+  animation-name: heartBeat;
+  animation: heartBeat 0.66s alternate;
+  animation-iteration-count: 2;
+}
+
+/*D-FLEX*/
+.flex-row-center {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-center {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-sb-center {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-end-md-center {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  @include media991 {
+    justify-content: center;
+  }
+}
+
+.flex-start-sm-colmn {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include media767 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.flex-end-sm-colmn {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include media767 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.flex-centr-lg-colmn {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  @include media991 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.flex-end-all {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 3rem 0;
+
+  @include media-min1400 {
+    padding: 0 5rem 0;
+  }
+
+  @include media-min1600 {
+    padding: 0 7rem 0;
+  }
+
+  @include media766 {
+    padding: 0 1rem 0;
+    align-items: center;
+  }
+}
+
+.flex-end-all-video {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  // padding: 0 3rem 0;
+
+  @include media766 {
+    flex-direction: row;
+    flex-direction: center;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+  }
+
+}
+
+.flex-end-all-new {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  // padding: 0 3rem 0;
+
+  @include media766 {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+}
+
+
+.flex-colmn-end-md-cntr {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  @include media991 {
+    align-items: center;
+  }
+}
+
+.flex-sm-center {
+  @include media500 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.flex-center-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-start-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.flex-end-jstf {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.dn {
+  display: none;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-fixed {
+  position: fixed;
+}
+
+// For ie margin
+.ie-mt-2 {
+
+  @media screen and (-ms-high-contrast: active),
+  (-ms-high-contrast: none) {
+    margin-top: 2rem;
+  }
+}

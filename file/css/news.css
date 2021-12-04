@@ -1,0 +1,8 @@
+.news-button {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.news-button .video-head__btn {
+  margin-bottom: 1rem;
+}
